@@ -1,5 +1,5 @@
 def removeKFromList(container, k):
-    removedK = [container[n] for n in range(len(container)) if container[n] != k]
+    removedK = [n for n in container if n != k]
 
     return removedK
 
