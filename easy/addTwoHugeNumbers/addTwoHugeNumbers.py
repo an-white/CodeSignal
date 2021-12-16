@@ -1,13 +1,8 @@
 def get_num(num):
-    iterator = iter(num)
-    signal = False
     str_numeric = ""
-    while not signal:
-        val = next(iterator, None)
-        if val != None:
-            str_numeric += f"{'0' * (4 - len(str(val)))}{val}"
-        else:
-            signal = True
+    for i in num:
+        str_numeric += f"{'0' * (4 - len(str(i)))}{i}"
+
     return int(str_numeric)
 
 
